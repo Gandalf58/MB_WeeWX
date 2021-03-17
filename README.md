@@ -87,9 +87,9 @@ Ouvrez le gestionnaire des tâches cron avec la commande:
 sudo crontab -e
 ```
 
-Ajoutez la ligne suivante pour exécuter le script toutes les 10 minutes.
+Ajoutez la ligne suivante pour exécuter le script toutes les 10 minutes à l'heure H:01, 11, 21, 31, 41 et 51, c'est-à dire après l'ajout des dernières données par WeeWX dans la base.
 ```
-*/10 * * * * php /home/pi/MB_WeeWX/meteobelgique.php
+1-59/10 * * * * php /home/pi/MB_WeeWX/meteobelgique.php
 ```
 
 Et voilà, les données sont envoyées toutes les 10 minutes, n'hésitez pas à nous contacter pour tout problème :-)
